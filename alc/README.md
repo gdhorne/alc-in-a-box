@@ -6,7 +6,7 @@
 
 ### Usage
 
-This application requires [Alpine Linux](https://alpinelinux.org) and is intended to be run within a container. See the [repository](https://gitlab.com/gregory/alc-in-a-box) for detailed instructions. The standalone container includes the code and data from the [repository](https://gitlab.com/gregoryhorne/alc).
+This application requires [Alpine Linux](https://alpinelinux.org) and is intended to be run within a container. See the [repository](https://gitlab.com/gdhorne/alc-in-a-box) for detailed instructions.
 
 ### Caveat
 

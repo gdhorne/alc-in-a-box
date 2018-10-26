@@ -4,7 +4,7 @@
 
 *This application is neither affiliated with nor endorsed by the [Atlantic Lottery Corporation]*(https://www.alc.ca) *, with headquarters located in Moncton, New Brunswick, Canada.*
 
-*Lottery Numbers Retrieval for Atlantic Lottery Corporation in a Box*, hereinafter referred to as *ALC in a Box* or * alc-in-a-box*,  provides script execution within a Docker container running Alpine Linux. The container definition build file and data retrieval scripts may be obtained from the project [repository](https://gitlab.com/alc).
+*Lottery Numbers Retrieval for Atlantic Lottery Corporation in a Box*, hereinafter referred to as *ALC in a Box* or * alc-in-a-box*,  provides script execution within a Docker container running Alpine Linux. The container definition build file and data retrieval scripts may be obtained from the project [repository](https://gitlab.com/gdhorne/alc-in-a-box).
 
 By default, the non-standalone version of the container image only provides an environment and relies on the data retrieval scripts being accessible from the host computer system.
 
@@ -16,7 +16,7 @@ To build the standalone or non-standalone version see the relevant instructions 
 
 #### Pre-built Container
 
-A pre-built image of the container configured to run in a self-contained standalone mode is available from the Docker Hub [repository](https://hub.socker.com/gdhorne/alc-in-a-box).
+A pre-built image of the container configured to run in a self-contained standalone mode is available from the Docker Hub [repository](https://hub.docker.com/gdhorne/r/alc-in-a-box).
 
 **Standalone**
 
@@ -33,7 +33,7 @@ To build the container image from scratch choose either the standalone or non-st
 
 **Non-Standalone**
 ```sh
-$ git clone https://gitlab.com/gregoryhorne/alc-in-a-box.git
+$ git clone https://gitlab.com/gdhorne/alc-in-a-box.git
 $ cd alc-in-a-box
 $ cp Dockerfile.nonstandalone Dockerfile
 $ sed 's/STANDALONE=1/STANDALONE=0/' alc/startup.sh > alc/new_startup.sh
@@ -43,7 +43,7 @@ $ docker build --tag alc:0.1 .
 
 **Standalone**
 ```sh
-$ git clone https://gitlab.com/gregoryhorne/alc-in-a-box.git
+$ git clone https://gitlab.com/gdhorne/alc-in-a-box.git
 $ cd alc-in-a-box
 $ cp Dockerfile.standalone Dockerfile
 $ docker build --tag alc:0.1 .
