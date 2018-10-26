@@ -14,7 +14,7 @@
 
 docker run --rm -it -e DISPLAY=$DISPLAY \
   -v ${PWD}:/home/firefox/project -v /tmp/.X11-unix:/tmp/.X11-unix \
-  --net=bridge alc-in-a-box:0.1 ${1}
+  --net=bridge alc-in-a-box:latest ${1}
 
 exit 0
 
