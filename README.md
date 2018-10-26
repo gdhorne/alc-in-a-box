@@ -10,6 +10,10 @@ By default, the non-standalone version of the container image only provides an e
 
 To build the standalone or non-standalone version see the relevant instructions in the **Pre-built Container** or  **Build Container from Scratch** sections.
 
+Obtain a copy of the data subdirectory from this [repository](https://gitlab.com/gregorydhorne/alc). Put it in a directory, which will be the current working directory, on the host computer system. The winning lottery numbers file, *./data/alc-winning-numbers.csv*:
+- will be copied into the container instance and the updated file copied back to the host computer system as soon as the script *alc.sh* is invoked (standalone mode), or
+- will be read and updated on the host computer system when the user either passes the script, *start.sh*, as an argument to *alc.sh* or types the command inside in the container instance (non-standalone mode).
+
 #### Prerequisites
 
 [Docker](https://docker.com) and [Git](https://git-scm.com) must be installed on the computer. Instructions specific to the operating system of the computer are available at the respective websites. A compatible X11 Windows system or equivalent must be installed on the host computer system capable of running an instantiated instance of this container.
@@ -87,8 +91,7 @@ Only those lottery draws taking place up to, but not including, the current date
 Licenses
 ----
 
-Simplified 2-Clause BSD, see individual files
+Simplified 2-Clause BSD, see individual files    
 GNU General Public License (GNU GPL) v2, see individual files
 
 Inclusion of multiple licenses does not imply nor infer, directly nor indirectly, dual licensing of the software.
-
